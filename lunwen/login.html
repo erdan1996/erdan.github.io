@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./static/css/site_impt.css">
+
+
+    <title>登录</title>
+    <style>
+        .header {
+            position: relative;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        
+        .logo-image {
+            background: url("./static/picture/login-logo.png") top left no-repeat;
+            width: 236px;
+            height: 147px;
+            margin-bottom: 50px;
+            box-sizing: border-box;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header b {
+            display: block;
+            width: 140px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: #000;
+            font-weight: 400;
+        }
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        blockquote,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        pre,
+        form,
+        fieldset,
+        legend,
+        button,
+        input,
+        textarea,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font: 12px/1.5tahoma, arial, \5b8b\4f53;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+        }
+        
+        address,
+        cite,
+        dfn,
+        em,
+        var {
+            font-style: normal;
+        }
+        
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: couriernew, courier, monospace;
+        }
+        
+        small {
+            font-size: 12px;
+        }
+        
+        ul,
+        ol {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        sup {
+            vertical-align: text-top;
+        }
+        
+        sub {
+            vertical-align: text-bottom;
+        }
+        
+        legend {
+            color: #000;
+        }
+        
+        fieldset,
+        img {
+            border: 0;
+        }
+        
+        button,
+        input,
+        select,
+        textarea {
+            font-size: 100%;
+        }
+        
+        .login-title {
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            color: #3c3c3c;
+            font-weight: 700;
+            text-align: center;
+            width: 100%;
+        }
+        /* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+        
+        body {
+            font-family: "Open Sans", Arial, sans-serif;
+            line-height: 1.5;
+            font-size: 16px;
+            color: #848484;
+            background-color: #f0f0f0;
+        }
+        
+        body.style-2 {
+            background-color: #ffffff;
+            background-size: cover;
+            background-position: -30% center;
+            background-repeat: no-repeat;
+            background-image: url(../images/bg_2.jpg);
+            height: 100%;
+        }
+        
+        body.style-3 {
+            background: #ffffff url(../images/geometry2.png) repeat;
+        }
+        
+        a {
+            color: #33cccc;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: #29a3a3;
+        }
+        
+        .menu {
+            padding: 0;
+            margin: 30px 0 0 0;
+        }
+        
+        .menu li {
+            list-style: none;
+            margin-bottom: 10px;
+            display: -moz-inline-stack;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+        }
+        
+        .menu li a {
+            padding: 5px;
+        }
+        
+        .menu li.active a {
+            color: #b3b3b3;
+        }
+        
+        .fh5co-form {
+            padding: 30px;
+            margin-top: 4em;
+            box-shadow: -4px 7px 46px 2px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .style-2 .fh5co-form {
+            box-shadow: -4px 7px 46px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .fh5co-form {
+                padding: 15px;
+            }
+        }
+        
+        .fh5co-form h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+            margin: 0 0 30px 0;
+            color: #000000;
+            text-align: center;
+        }
+        
+        .fh5co-form .form-group {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .fh5co-form .form-group p {
+            font-size: 14px;
+            color: #9f9f9f;
+            font-weight: 300;
+        }
+        
+        .fh5co-form .form-group p a {
+            color: #000000;
+        }
+        
+        .fh5co-form label {
+            font-weight: 300;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        
+        .fh5co-form .form-control {
+            font-size: 16px;
+            font-weight: 300;
+            height: 50px;
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+            margin-left: 50px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: none;
+            border-radius: 0px;
+            transition: all 0.3s ease;
+        }
+        
+        .fh5co-form .form-control::-webkit-input-placeholder {
+            color: rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+        
+        .fh5co-form .form-control::-moz-placeholder {
+            color: rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+        
+        .fh5co-form .form-control:-ms-input-placeholder {
+            color: rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+        
+        .copyrights {
+            text-indent: -9999px;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+        
+        .fh5co-form .form-control:-moz-placeholder {
+            color: rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+        
+        .fh5co-form .form-control:focus,
+        .fh5co-form .form-control:active {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn-primary {
+            height: 50px;
+            padding-right: 40px;
+            padding-left: 40px;
+            border: none;
+            background: rgb(177, 32, 37);
+            color: #ffffff;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active {
+            color: #ffffff;
+            background: #47d1d1 !important;
+            outline: none;
+        }
+        
+        input,
+        textarea {
+            color: #000;
+        }
+        
+        .placeholder {
+            color: #aaa;
+        }
+        
+        .js .animate-box {
+            opacity: 0;
+        }
+        /*# sourceMappingURL=style.css.map */
+        
+        .footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 150px;
+            width: 100%;
+            /* background-color: red; */
+            margin-top: 30px;
+            background: url("./static/images/foot_bg.jpg") no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w">
+        <div class="header">
+            <div class="logo-image"></div>
+            <b>欢迎登录</b>
+            <div class="login-msg error" style="text-align: center;width: 100%;line-height: 30px; margin: 0 auto;background-color: rgb(255,248,240);">
+                <p class="error" style="float: none;width: auto;">
+                    为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="login">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+
+
+                        <!-- Start Sign In Form -->
+                        <form action="#" class="fh5co-form animate-box fadeInRight animated-fast" data-animate-effect="fadeInRight">
+
+                            <div class="form-group">
+                                <label for="username" class="sr-only">用户名</label>
+                                <input type="text" class="form-control" id="username" placeholder="Username" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">密码</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="remember"><input type="checkbox" id="remember">记住我</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="登录" class="btn btn-primary">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="去注册" class="btn btn-primary" id="zhuce">
+                            </div>
+                        </form>
+                        <!-- END Sign In Form -->
+
+
+                    </div>
+                </div>
+            </div>
+            <!--标准登录框结束-->
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        var input = document.getElementById('zhuce');
+        input.onfocus = function() {
+            console.log(111)
+            window.location.href = "./zhuce.html";
+
+            console.log(666)
+
+        }
+    </script>
+</body>
+
+</html>
