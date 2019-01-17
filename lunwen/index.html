@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--由中企动力科技集团股份有限公司福州分公司技术部设计制作<br>如果您有任何意见或建议请电邮dm-fuzhou@300.cn -->
+
 
     <title>西安回民街</title>
     <meta name="keywords" content="西安回民街">
@@ -40,29 +40,64 @@
             font-size: 40px !important;
         }
         
-        .login {
+        .fixed-right-menu {
+            width: 50px;
             position: fixed;
-            top: 50%;
             right: 0;
-            z-index: 2000;
-            border-radius: 20%;
-            border: 1px solid red;
-            background-color: #fff;
+            top: 50%;
+            margin-top: -170px;
+            z-index: 1100;
         }
         
-        .login li {
-            width: 100%;
-            line-height: 50px;
+        .fixed-right-menu .menu-item {
+            margin-bottom: 5px;
+            background: #EFEFEF;
             text-align: center;
-            font-size: 16px;
-            padding: 0 30px;
-            color: #000;
-            border-bottom: 1px solid red;
+            width: 50px;
+            position: relative;
         }
         
-        .login li:last-child {
-            border-bottom: none;
+        .fixed-right-menu .menu-item .menu-hd {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            color: #666;
         }
+        
+        .fixed-right-menu .menu-item .menu-name {
+            line-height: 18px;
+        }
+        
+        #c_companyplace_list-15081437905243048 li {
+            width: 100%;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        
+        #c_companyplace_list-15081437905243048 li h3 {
+            width: 100%;
+            line-height: 30px;
+            margin-bottom: 5px;
+        }
+        
+        #c_companyplace_list-15081437905243048 li div {
+            overflow: hidden;
+        }
+        
+        #c_companyplace_list-15081437905243048 li div p {
+            display: inline-block;
+            width: 80%;
+            float: left;
+            overflow: hidden;
+            /*超出部分隐藏*/
+            white-space: nowrap;
+            /*不换行*/
+            text-overflow: ellipsis;
+            /*超出部分文字以...显示*/
+        }
+        
+        #c_companyplace_list-15081437905243048 li div img {}
     </style>
     <script type="text/javascript">
         window.siteIsPc = true;
@@ -748,7 +783,7 @@
                         <div class="w_btn animated  ">
                             <a href="/trip.html" class="e_link e_link-000 p_link" target="_self" title="查看更多旅游路线">
                                 <div class="e_btn e_CommonBtn-001 p_CommonBtn">
-                                    <div class="font"><i class="iconfont"></i>查看更多旅游路线</div>
+                                    <div class="font" id="tripline"><a href="trip.html">查看更多旅游路线</a> </div>
                                 </div>
                             </a>
                         </div>
@@ -758,27 +793,33 @@
                             <ul style="height: 100%">
                                 <li style="color:#000;font-size: 16px;">
                                     <h3>西安回民街旅游线路</h3>
-                                    <div>回民街线路</div>
+                                    <div>
+                                        <p>回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路</p> <img src="./static/picture/right.png" alt="" style="float: right"></div>
+
                                 </li>
                                 <li style="color:#000;font-size: 16px;">
                                     <h3>西安回民街旅游线路</h3>
-                                    <div>回民街线路</div>
+                                    <div>
+                                        <p>回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路</p> <img src="./static/picture/right.png" alt="" style="float: right"></div>
+
                                 </li>
                                 <li style="color:#000;font-size: 16px;">
                                     <h3>西安回民街旅游线路</h3>
-                                    <div>回民街线路</div>
+                                    <div>
+                                        <p>回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路</p> <img src="./static/picture/right.png" alt="" style="float: right"></div>
+
                                 </li>
                                 <li style="color:#000;font-size: 16px;">
                                     <h3>西安回民街旅游线路</h3>
-                                    <div>回民街线路</div>
+                                    <div>
+                                        <p>回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路</p> <img src="./static/picture/right.png" alt="" style="float: right"></div>
+
                                 </li>
                                 <li style="color:#000;font-size: 16px;">
                                     <h3>西安回民街旅游线路</h3>
-                                    <div>回民街线路</div>
-                                </li>
-                                <li style="color:#000;font-size: 16px;">
-                                    <h3>西安回民街旅游线路</h3>
-                                    <div>回民街线路</div>
+                                    <div>
+                                        <p>回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路回民街线路</p> <img src="./static/picture/right.png" alt="" style="float: right"></div>
+
                                 </li>
                             </ul>
                         </div>
@@ -1189,7 +1230,7 @@
                         <div class="w_btn animated  ">
                             <a href="/news.html?cid=2" class="e_link e_link-000 p_link" target="_self" title="查看更多资讯">
                                 <div class="e_btn e_CommonBtn-001 p_CommonBtn">
-                                    <div class="font"><i class="iconfont"></i>查看更多资讯</div>
+                                    <div class="font"> <a href="news.html"> 查看更多资讯</a> </div>
                                 </div>
                             </a>
                         </div>
@@ -1232,13 +1273,27 @@
                 </div>
             </div>
         </div>
-        <div class="login">
-            <ul>
-                <li><a href="login.html" target="_blank">登录</a></li>
-                <li><a href="zhuce.html" target="_blank">注册</a></li>
-                <li><a href="user.html" target="_blank">欢迎您</a></li>
-            </ul>
-        </div>
+        <ul class="fixed-right-menu">
+            <li class="menu-item">
+                <a href="javascript:;" class="menu-hd goGonggao">
+                    <img src="./static/picture/denglu.png" alt="">
+                    <h4 class="menu-name">登录</h4>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a name="g_href" data-type="1" data-href="view/infos/service_number.html" data-redirect="Y" href="javascript:;" class="menu-hd">
+                    <img src="./static/picture/zhuce.png" alt="">
+                    <h4 class="menu-name">注册</h4>
+                </a>
+            </li>
+
+            <li class="menu-item" style="display: none">
+                <a name="g_href" data-type="1" data-href="view/infos/safetyTips.html" data-redirect="Y" class="menu-hd" href="javascript:;">
+                    <img src="./static/picture/user.png" alt="">
+                    <h4 class="menu-name">欢迎您</h4>
+                </a>
+            </li>
+        </ul>
     </div>
     <script type="text/javascript" src="static/js/wow.min.js"></script>
     <script>
